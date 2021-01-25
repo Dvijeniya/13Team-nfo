@@ -1,0 +1,29 @@
+{
+  "name": "13 Team İnfo Bot",
+  "description": "13 Team Hakkında bilgi almak için tasarlanmıştır ",
+  "logo": "",
+  "keywords": [
+    "Youtube","YoutubeDownloader"
+  ],
+  "repository": "https://github.com/TheBaghirof/13Team-nfo",
+  "success_url": "https://t.me/Team13infobot",
+  "website": "https://github.com/TheBaghirof/13Team-nfo",
+  "env": {
+        "API_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
+        "BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true}
+  },
+      "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "heroku/python"}
+    ],
+  "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+      "stack": "heroku-20"
+
+
+}
